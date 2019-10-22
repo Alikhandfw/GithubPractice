@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/new/eclipse-workspaceGeico/gitHubPractice/src/test/java/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/alidf/git/GithubPractice/src/test/java/features/login.feature");
 formatter.feature({
   "line": 1,
   "name": "Valid user login",
@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7261683000,
+  "duration": 7701012072,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "LoginSteps.user_Enter_Id_and_Password()"
 });
 formatter.result({
-  "duration": 3160760401,
+  "duration": 3488927249,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_is_able_to_login()"
 });
 formatter.result({
-  "duration": 7617726400,
+  "duration": 8799203316,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_is_on_Online_Banking_console()"
 });
 formatter.result({
-  "duration": 31288700,
+  "duration": 38598356,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6247856600,
+  "duration": 7400914813,
   "status": "passed"
 });
 formatter.scenario({
@@ -110,56 +110,56 @@ formatter.match({
   "location": "LoginSteps.user_is_no_geico_com()"
 });
 formatter.result({
-  "duration": 12514700,
+  "duration": 11502501,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.enter_zip_and_start_quote()"
 });
 formatter.result({
-  "duration": 2589646000,
+  "duration": 2704245480,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.customer_enter_name_and_dob_and_address()"
 });
 formatter.result({
-  "duration": 7216948700,
+  "duration": 9974371773,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_add_car_info_and_ownwership()"
 });
 formatter.result({
-  "duration": 6405685800,
+  "duration": 6101875480,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_driving_habits()"
 });
 formatter.result({
-  "duration": 1309443501,
+  "duration": 1315070662,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_slects_days_of_driving_and_miles()"
 });
 formatter.result({
-  "duration": 35901,
+  "duration": 25188,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_verfies_Annual_Milleage_and_go_next()"
 });
 formatter.result({
-  "duration": 31300,
+  "duration": 26731,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.verify_personal_info()"
 });
 formatter.result({
-  "duration": 30000,
+  "duration": 37526,
   "status": "passed"
 });
 });
