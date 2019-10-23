@@ -13,7 +13,7 @@ WebDriver driver;
 
 	
 	
-	// Every Page must have a constructor to invite the driver hjjjjjjj
+	// Every Page must have a constructor to invite the driver
 	
 	  public LoginPage(WebDriver driver) { this.driver = driver; }
 	 
@@ -130,6 +130,25 @@ WebDriver driver;
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement PleasureNextButton;
 	
+	@FindBy(how = How.ID, using = "AnnualMileage")	
+	WebElement AnnualMileage;
+	
+	@FindBy(how = How.ID, using = "option16,000-16,999")	
+	WebElement MilesDriven;
+	
+	@FindBy(how = How.ID, using = "NextButton")
+	WebElement MilesNextButton;
+	
+	@FindBy(how = How.ID, using = "AddVehicleButton")	
+	WebElement AddVehicle;
+	
+	
+	@FindBy(how = How.XPATH, using = "//button[@id='NextButton']")
+	WebElement AddVehicleNextButton;
+	
+	@FindBy(how = How.ID, using = "SaveQuoteLinkMobile")	
+			
+	WebElement SaveQuote;
 	
 	public void EnterID() throws InterruptedException {
 
@@ -290,8 +309,8 @@ WebDriver driver;
 		ModelSelection.click();
 		
 		WebDriverWait wait7 = new WebDriverWait(driver, 9000);
-		wait7.until(ExpectedConditions.visibilityOf(VehicleNextButton));
-		VehicleNextButton.click();
+		wait7.until(ExpectedConditions.visibilityOf(AddVehicleNextButton));
+		AddVehicleNextButton.click();
 		
 		
 		
@@ -335,8 +354,29 @@ WebDriver driver;
 		PleasureNextButton.click();
 	}
 	
+	public void MilesDriven() {
+		WebDriverWait wait1 = new WebDriverWait(driver, 9000);
+		wait1.until(ExpectedConditions.visibilityOf(AnnualMileage));
+		AnnualMileage.click();
+		WebDriverWait wait2 = new WebDriverWait(driver, 9000);
+		wait2.until(ExpectedConditions.visibilityOf(MilesDriven));
+		MilesDriven.click();
+		wait(MilesNextButton);
+		MilesNextButton.click();
+			
+		
+
+		
+	}
 	
-	
+	public void AddVehicle() {
+		
+		
+		wait(SaveQuote);
+		SaveQuote.click();
+		
+		
+	}
 	
 	
 	
