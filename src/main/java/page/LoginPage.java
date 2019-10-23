@@ -345,9 +345,13 @@ public class LoginPage {
 
 	public void AddVehicle() {
 
-		wait(SaveQuote);
-		SaveQuote.click();
+		/*
+		 * WebDriverWait wait = new WebDriverWait(driver, 9000);
+		 * wait.until(ExpectedConditions.visibilityOf(SaveQuote)); SaveQuote.click();
+		 */
 
+		driver.close();
+		driver.quit();
 	}
 
 	public void wait(WebElement Ele) {
