@@ -108,12 +108,12 @@ public class LoginSteps {
 
 	@Then("^user slects days of driving and miles$")
 	public void user_slects_days_of_driving_and_miles() {
-	   
+	   loginpage.MilesDriven();
 	}
 
 	@Then("^user verfies Annual Milleage and go next$")
 	public void user_verfies_Annual_Milleage_and_go_next()  {
-	    
+	    loginpage.AddVehicle();
 	}
 
 	@Then("^verify personal info$")
