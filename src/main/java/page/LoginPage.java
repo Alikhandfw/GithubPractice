@@ -8,15 +8,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-	
-WebDriver driver;
 
-	
-	
+	WebDriver driver;
+
 	// Every Page must have a constructor to invite the driver
-	
-	  public LoginPage(WebDriver driver) { this.driver = driver; }
-	 
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
 
 	// Element Library
 
@@ -72,84 +71,80 @@ WebDriver driver;
 
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement DOBNameNextButton;
-	
+
 	@FindBy(how = How.ID, using = "AddressSearch")
 	WebElement EnterAddress;
 
 	@FindBy(how = How.ID, using = "UnitNumber")
 	WebElement AptNo;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement AddressNextButton;
-	
+
 	@FindBy(how = How.ID, using = "labelForother")
 	WebElement CheckBox;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement CheckBoxNext;
-	
+
 	@FindBy(how = How.ID, using = "VehicleYear")
 	WebElement Vehicleyear;
-	
+
 	@FindBy(how = How.ID, using = "option2019")
 	WebElement SelectYear;
-	
-	
+
 	@FindBy(how = How.XPATH, using = "//select[@id='VehicleMake']")
 	WebElement Make;
-	
+
 	@FindBy(how = How.ID, using = "optionBMW")
 	WebElement MakeSelect;
-	
+
 	@FindBy(how = How.ID, using = "VehicleModel")
 	WebElement Model;
-	
+
 	@FindBy(how = How.ID, using = "option230ixDrive")
 	WebElement ModelSelection;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement VehicleNextButton;
-	
+
 	@FindBy(how = How.ID, using = "labelForCoupe 2 Door")
 	WebElement RadioButton;
-	
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement RadioNextButton;
-	
+
 	@FindBy(how = How.ID, using = "labelForOwned")
 	WebElement RadioOwnership;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement RadioOwnerNextButton;
-	
-	
+
 	@FindBy(how = How.ID, using = "labelForPleasure")
 	WebElement RadioButtonPleasure;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement PleasureNextButton;
-	
-	@FindBy(how = How.ID, using = "AnnualMileage")	
+
+	@FindBy(how = How.ID, using = "AnnualMileage")
 	WebElement AnnualMileage;
-	
-	@FindBy(how = How.ID, using = "option16,000-16,999")	
+
+	@FindBy(how = How.ID, using = "option16,000-16,999")
 	WebElement MilesDriven;
-	
+
 	@FindBy(how = How.ID, using = "NextButton")
 	WebElement MilesNextButton;
-	
-	@FindBy(how = How.ID, using = "AddVehicleButton")	
+
+	@FindBy(how = How.ID, using = "AddVehicleButton")
 	WebElement AddVehicle;
-	
-	
+
 	@FindBy(how = How.XPATH, using = "//button[@id='NextButton']")
 	WebElement AddVehicleNextButton;
-	
-	@FindBy(how = How.ID, using = "SaveQuoteLinkMobile")	
-			
+
+	@FindBy(how = How.ID, using = "SaveQuoteLinkMobile")
+
 	WebElement SaveQuote;
-	
+
 	public void EnterID() throws InterruptedException {
 
 		/*
@@ -195,7 +190,7 @@ WebDriver driver;
 
 		String title2 = driver.getTitle();
 		System.out.println("PPPPPOOOOPPPPP" + title2);
-		
+
 		WebDriverWait wait3 = new WebDriverWait(driver, 9000);
 		wait3.until(ExpectedConditions.visibilityOf(UserID));
 
@@ -236,8 +231,6 @@ WebDriver driver;
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.visibilityOf(FirstName));
 
-		
-
 		FirstName.sendKeys("ali");
 		LastName.sendKeys("Khan");
 		WebDriverWait wait2 = new WebDriverWait(driver, 9000);
@@ -256,104 +249,88 @@ WebDriver driver;
 		DOBNameNextButton.click();
 
 	}
-	
-	
-	
+
 	public void Address(String add, String Appt) {
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.visibilityOf(EnterAddress));
 		EnterAddress.sendKeys(add);
 		AptNo.sendKeys(Appt);
-		AddressNextButton.click();	
-		
-		
+		AddressNextButton.click();
+
 	}
-	
-	
+
 	public void checkbox() {
 		WebDriverWait wait = new WebDriverWait(driver, 500);
 		wait.until(ExpectedConditions.visibilityOf(CheckBox));
 		CheckBox.click();
 		CheckBoxNext.click();
-		
+
 	}
 
-	
-	
 	public void Vehicle() throws InterruptedException {
-		
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 9000);
 		wait.until(ExpectedConditions.visibilityOf(Vehicleyear));
 		Vehicleyear.click();
 		WebDriverWait wait4 = new WebDriverWait(driver, 9000);
 		wait4.until(ExpectedConditions.visibilityOf(SelectYear));
 		SelectYear.click();
-		
+
 		WebDriverWait wait2 = new WebDriverWait(driver, 9000);
 		wait2.until(ExpectedConditions.visibilityOf(Make));
-		
-		
+
 		Make.click();
 		WebDriverWait wait5 = new WebDriverWait(driver, 9000);
 		wait5.until(ExpectedConditions.visibilityOf(MakeSelect));
 		MakeSelect.click();
-		
+
 		WebDriverWait wait3 = new WebDriverWait(driver, 9000);
 		wait3.until(ExpectedConditions.visibilityOf(Model));
-		
+
 		Model.click();
-		
+
 		WebDriverWait wait6 = new WebDriverWait(driver, 9000);
 		wait6.until(ExpectedConditions.visibilityOf(ModelSelection));
 		ModelSelection.click();
-		
+
 		WebDriverWait wait7 = new WebDriverWait(driver, 9000);
 		wait7.until(ExpectedConditions.visibilityOf(AddVehicleNextButton));
 		AddVehicleNextButton.click();
-		
-		
-		
-		
+
 	}
-	
-	public void Radio () {
-		
+
+	public void Radio() {
+
 		WebDriverWait wait6 = new WebDriverWait(driver, 9000);
 		wait6.until(ExpectedConditions.visibilityOf(RadioButton));
-		
+
 		RadioButton.click();
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 9000);
 		wait.until(ExpectedConditions.visibilityOf(RadioNextButton));
-		
+
 		RadioNextButton.click();
-		
-		
+
 	}
-	
-	
+
 	public void ownership() {
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 9000);
 		wait.until(ExpectedConditions.visibilityOf(RadioOwnership));
-		
+
 		RadioOwnership.click();
-		
-		
-		
+
 		RadioOwnerNextButton.click();
-		
+
 	}
-	
-	
-	public void PrimaryUsa () {
+
+	public void PrimaryUsa() {
 		WebDriverWait wait = new WebDriverWait(driver, 9000);
 		wait.until(ExpectedConditions.visibilityOf(RadioButtonPleasure));
 		RadioButtonPleasure.click();
 		PleasureNextButton.click();
 	}
-	
+
 	public void MilesDriven() {
 		WebDriverWait wait1 = new WebDriverWait(driver, 9000);
 		wait1.until(ExpectedConditions.visibilityOf(AnnualMileage));
@@ -363,34 +340,21 @@ WebDriver driver;
 		MilesDriven.click();
 		wait(MilesNextButton);
 		MilesNextButton.click();
-			
-		
 
-		
 	}
-	
+
 	public void AddVehicle() {
-		
-		
+
 		wait(SaveQuote);
 		SaveQuote.click();
-		
-		
+
 	}
-	
-	
-	
+
 	public void wait(WebElement Ele) {
-	
+
 		WebDriverWait wait = new WebDriverWait(driver, 9000);
-		wait.until(ExpectedConditions.visibilityOf(Ele));	
-		
-		
+		wait.until(ExpectedConditions.visibilityOf(Ele));
+
 	}
-	
-	
-	
-	
-	
 
 }
