@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7684366447,
+  "duration": 7467551287,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "LoginSteps.user_Enter_Id_and_Password()"
 });
 formatter.result({
-  "duration": 3518758906,
+  "duration": 3615665527,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_is_able_to_login()"
 });
 formatter.result({
-  "duration": 8396068813,
+  "duration": 9091731112,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_is_on_Online_Banking_console()"
 });
 formatter.result({
-  "duration": 39034275,
+  "duration": 38965906,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6571711228,
+  "duration": 7119589311,
   "status": "passed"
 });
 formatter.scenario({
@@ -110,44 +110,56 @@ formatter.match({
   "location": "LoginSteps.user_is_no_geico_com()"
 });
 formatter.result({
-  "duration": 7086252,
+  "duration": 11193554,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.enter_zip_and_start_quote()"
 });
 formatter.result({
-  "duration": 2995413599,
+  "duration": 2307235945,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.customer_enter_name_and_dob_and_address()"
 });
 formatter.result({
-  "duration": 6822661716,
+  "duration": 8522460618,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_can_add_car_info_and_ownwership()"
 });
 formatter.result({
-  "duration": 6454530267,
+  "duration": 7052360645,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_driving_habits()"
 });
 formatter.result({
-  "duration": 1298832683,
+  "duration": 1299628440,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_slects_days_of_driving_and_miles()"
 });
 formatter.result({
-  "duration": 998232678,
+  "duration": 1481252918,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_verfies_Annual_Milleage_and_go_next()"
+});
+formatter.result({
+  "duration": 1083071850,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.verify_personal_info()"
+});
+formatter.result({
+  "duration": 26217,
+  "status": "passed"
+});
 });
